@@ -4,8 +4,7 @@
 #include <iostream>
 #include <wiringPiSPI.h>
 
-#define SPI_CHANNEL 0
-#define SPI_CLOCK_SPEED 1000000
+
 
 class Vimana {
 public:
@@ -35,7 +34,7 @@ public:
     int commandLoiter(long longitude, long latitude,long altitude,double radius); // 
     int commandSetHeading(double Heading); // command vimana to go certain heading returns command ack
 
-protected:
+private:
     //attitude
     double pitch;
     double roll;
