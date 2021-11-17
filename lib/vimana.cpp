@@ -277,11 +277,16 @@ double Vimana::heading(){
 
 //data transmit
 int Vimana::commandGoTo(long longitude, long latitude,long altitude){
-
+    return 1;
 } // sends command to vimana to go to longitude, latitude, altitude provided returns command ack
 int Vimana::commandLoiter(long longitude, long latitude,long altitude,double radius){
-
+    return 1;
 } // 
 int Vimana::commandSetHeading(double Heading){
-    
+    return 1;
 } // command vimana to go certain heading returns command ack
+
+//utilities 
+double distanceToCoor(long longitude, long latitude){
+    return 123;
+}

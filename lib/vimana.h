@@ -29,10 +29,15 @@ public:
     long getVz();
     double heading();
 
+    
     //data transmit
     int commandGoTo(long longitude, long latitude,long altitude); // sends command to vimana to go to longitude, latitude, altitude provided returns command ack
     int commandLoiter(long longitude, long latitude,long altitude,double radius); // 
     int commandSetHeading(double Heading); // command vimana to go certain heading returns command ack
+    
+    
+    // utilities
+    double distanceToCoor(long longitude, long latitude); //return vimana's distance from given coordinates
 
 private:
     //attitude
